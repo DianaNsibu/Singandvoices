@@ -27,6 +27,8 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
+    color: #03191e;
+    background-color: #efedeb;
   }
 /* Make images easier to work with */
 img,
@@ -36,4 +38,35 @@ picture {
 }
 h1,h2,h3,h4{
     font-family: 'Lora', serif;
+}
+a{
+  color: #f63502;
+}
+
+
+/* header */
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background-color: #03191e;
+}
+.navbar a{
+  color:#efedeb;
+}
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links ul{
+  display: flex;
+}
+.nav-links ul li{
+  margin-right: 0.9rem;
+}
+.nav-links ul li .active-link{
+  color:#f63502;
+  font-weight: bold;
 }
