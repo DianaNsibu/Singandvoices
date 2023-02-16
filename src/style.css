@@ -42,6 +42,9 @@ h1,h2,h3,h4{
 a{
   color: #f63502;
 }
+p{
+  margin-top: 0.9rem;
+}
 
 main {
   width: 100%;
@@ -61,6 +64,7 @@ section {
 .navbar{
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 2%;
   background-color: #03191e;
@@ -74,10 +78,9 @@ section {
 }
 .nav-links ul{
   display: flex;
+  flex-direction: column;
 }
-.nav-links ul li{
-  margin-right: 0.9rem;
-}
+
 .nav-links ul li .active-link{
   color:#f63502;
   font-weight: bold;
@@ -107,6 +110,22 @@ section {
 }
 .hero-btn {
   color: #03191e;
+  display: inline-block;
+  border:#03191e 1px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  
+}
+.hero-btn:hover {
+ 
+  color: #efedeb;
+  background-color: #03191e;
+  transition: 1s;
 }
 .text-box h1 {
   font-size: 48px;
@@ -119,18 +138,35 @@ section {
 .text-box span{
   color:#f63502;
 }
+
+.video{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video iframe{
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+  width: 80%;
+}
+
+
 @media screen and (max-width:768px) {
+  .video iframe{
+    width: 100%;
+  }
   
 }
 
 @media screen and (min-width: 768px){
 
+.nav-links ul li{
+  margin-right: 0.9rem;
+} 
+
 /* header */
-.navbar{
-  justify-content: space-between;
-  align-items: center;
-  padding: 2%;
-}
+
 .nav-links ul li{
   margin-right: 0.9rem;
 }
@@ -149,11 +185,24 @@ section {
 }
 
 @media screen and (min-width:900px) {
+  /* header */
+.navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  
+}
+.nav-links ul{
+  flex-direction: row;
+}
   .text-box {
     width: 60%;
   }
   .text-box h1{
-    font-size: 62px;
+    font-size: 82px;
   }
 }
 

@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -21,7 +22,7 @@
                 <ul role="list">
                     <li><a href="#hero-section" class="active-link">Accueil</a></li>
                     <li><a href="#about">La chorale</a></li>
-                    <li><a href="service">Notre répertoire</a></li>
+                    <li><a href="#service">Notre répertoire</a></li>
                     <li><a href="#demo">Nous écouter</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
@@ -32,29 +33,27 @@
         <section id="hero-section">
             <div class="text-box">
                 <h1>Sing <span>&amp;</span> voices</h1>
-                <p>Chants et animations pour vos cérémonies</p>
+                <p>Une chorale pour animer vos cérémonies</p>
                 <div>
-                    <a class="hero-btn" href="#about">Nous découvrir</a>
-                    <a class="hero-btn" href="#contact">Contactez-nous</a>
-                </div> 
+                    <a class="hero-btn" role="button" href="#about">Nous découvrir</a>
+                    <a class="hero-btn" role="button" href="#contact">Contactez-nous</a>
+                </div>
             </div>
         </section>
         <section id="about">
             <h2>La chorale</h2>
-            <p>Sing and voices est une chorale au choeur de Bruxelles dont le répertoire riche et varié permet d'animer
+            <p>Sing &amp; voices est une chorale au choeur de Bruxelles dont le répertoire riche et varié permet d'animer
                 vos messes, anniversaires, concerts, activités d'entreprise et bien d'autres. </p>
-            <p>Sing and voices est né de la volonté de soutenir des jeunes étudiants, principalement issus des diaporas
+            <p>La chorale Sing &amp; voices est né de la volonté de soutenir des jeunes étudiants, principalement issus des diaporas
                 africaines, dans la réalisation de leur projets professionnels en leur apportant une aide financière.
                 Notre objectif principal est de les voir s'accomplir dans leurs identités et dans leurs rêves.</p>
-            <p>Faire appel à Sing and voices, c'est prendre part à un projet créatif et social.</p>
-            <div><img src="" alt=""></div>
+            <p>Faire appel à la chorale Sing &amp; voices, c'est prendre part à un projet créatif et social.</p>
         </section>
         <section id="service">
             <h2>Notre répertoire</h2>
-            <p>Sing and voices n'est pas qu'une chorale gospel. Le choix des chants se fait en conformité avec les goûts
-                et pour le plaisir de nos hôtes. <br>Voici un bref aperçu de notre repertoire:
+            <p>La chorale Sing &amp; voices n'est pas qu'une chorale gospel.Le choix des chants se fait en conformité avec les goûts et pour le plaisir de nos hôtes. <br>Voici un bref aperçu de notre repertoire:
             </p>
-            <div>
+            <div class="list-chants">
                 <ul class="chants">
                     <li>Ave Maria (Beyoncé)</li>
                     <li>I will follow him (Sister Act)</li>
@@ -70,30 +69,37 @@
                     <li>jambo (akuna matata)</li>
                 </ul>
             </div>
-            <p>Nous nous adaptons à toutes vos demandes, n'hésitez pas à nous contacter.</p>
+            <p>Nous nous adaptons à toutes vos demandes, n'hésitez pas à nous <a href="#contact">contacter</a> .</p>
         </section>
         <section id="demo">
             <h2>Nous écouter</h2>
+            <p> Chanter pour nous est une passion que nous aimons partager.</p>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GMDdiLDVPHU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+           <p>Vous souhaitez nous écouter en live ? Prenez <a href="#contact">contact</a> et nous nous ferons une joie de
+            vous répondre au plus vite.</p> 
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <p>Vous souhaitez solliciter notre intervention pour un event, participer à une répétiton ou encore
                 rejoindre la chorale, contactez- nous, nous vous répondons au plus vite.</p>
             <div>
-                <div><img src="" alt=""></div>
-                <div>
-                    <p>adressemail@mail.com</p>
-                    <p>numéro de téléphone</p>
-                    <a href="#">Facebook</a>
-                    <a href="#">Insta</a>
-                </div>
+                <p>adressemail@mail.com</p>
+                <p>numéro de téléphone</p>
+                <a href="#">Facebook</a>
+                <a href="#">Insta</a>
             </div>
+            <img src="./src/img/Sing & Voices (1).png" alt="Sing & voices en prestation">
         </section>
     </main>
     <footer>
         <p>Sing and voices tous droits réservés</p>
     </footer>
-    <script src="/src/min.js"></script>
+    <!-- <script src="/src/min.js"></script> -->
 </body>
 
 </html>
