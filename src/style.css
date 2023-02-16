@@ -72,10 +72,10 @@ a{
 }
 
 #hero-section{
-  background-image: url(./img/Sing\ &\ Voices-wesite-cover.png);
+  background-image: url(./img/sing&voices-hero-img.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  /* background-position: center; */
+  background-size: cover;
   width: 100%;
   height: 90vh;
 }
