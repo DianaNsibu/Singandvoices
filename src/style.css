@@ -38,12 +38,13 @@ picture {
 }
 h1,h2,h3,h4{
     font-family: 'Lora', serif;
+    text-align: center;
 }
 a{
   color: #f63502;
 }
 p{
-  margin-top: 0.5rem;
+  margin-top: 0.9rem;
   margin-bottom: 0.9rem;
 }
 
@@ -158,6 +159,14 @@ section {
   margin-bottom: 0.9rem;
 }
 
+/*section contact et infos*/
+.contact a{
+  color:#03191e;
+}
+.contact span i{
+  font-size: 28px;
+}
+
 footer{
   background-color: #012A36;
   color: #efedeb;
@@ -223,9 +232,9 @@ footer{
     font-size: 82px;
   }
 
-  .video iframe{
+  /* .video iframe{
     width: 70%;
-  }
+  } */
 }
 
 
