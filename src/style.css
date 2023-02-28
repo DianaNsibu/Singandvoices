@@ -12,7 +12,7 @@ ol[role='list'] {
   list-style: none;
 }
 /* Set core root defaults */
-html:focus-within {
+html{
     scroll-behavior: smooth;
   }
   html, body{
@@ -46,6 +46,7 @@ p{
 }
 
 main {
+  border: #f63502 1px solid;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -60,16 +61,17 @@ section {
 
 
 /*-------------------------- header--------------------------------- */
-
+/* header{
+  position: sticky;
+  top:0;
+} */
 .navbar{
-  /* position: fixed; */
   width: 100%;
   display: flex;
   align-items: center;
   padding: 2%;
   background-color: #03191e;
   justify-content: space-between;
-  
 }
 .logo{
   color:#efedeb;
