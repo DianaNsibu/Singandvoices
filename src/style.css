@@ -62,7 +62,7 @@ section {
 
 
 
-/* header */
+/*-------------------------- header--------------------------------- */
 .navbar{
   width: 100%;
   display: flex;
@@ -88,7 +88,7 @@ section {
   font-weight: bold;
 }
 
-/*hero-section*/
+/*-----------------------hero-section--------------------------------------*/
 #hero-section{
   background-image: url(./img/sing&voices-hero-img.png);
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ section {
 .text-box span{
   color:#f63502;
 }
-/*Vidéo*/
+/*-------------Vidéo-------------------*/
 .video{
   width: 80%;
   display: flex;
@@ -153,13 +153,13 @@ section {
   width: 80%;
 }
 
-/*section nous écouter*/
+/*---------------------section nous écouter----------------------*/
 .list-chants ul {
   padding-left: 1.1rem;
   margin-bottom: 0.9rem;
 }
 
-/*section contact et infos*/
+/*------------------section contact et infos--------------------*/
 .contact a{
   color:#03191e;
 }
