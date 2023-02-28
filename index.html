@@ -18,15 +18,18 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#hero-section" class="logo">Sing and voices</a>
+            <div class="nav-burger">
+                <a href="#hero-section" class="logo">Sing and voices</a>
+                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
             <div class="nav-links">
-                <ul role="list">
-                    <li><a href="#hero-section" class="active-link">Accueil</a></li>
-                    <li><a href="#about">La chorale</a></li>
-                    <li><a href="#service">Notre répertoire</a></li>
-                    <li><a href="#demo">Nous écouter</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
+                <a href="#hero-section" class="nav-item active">Accueil</a>
+                <a href="#about" class="nav-item">La chorale</a>
+                <a href="#service" class="nav-item">Notre répertoire</a>
+                <a href="#demo" class="nav-item">Nous écouter</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </div>
         </nav>
     </header>
@@ -92,7 +95,8 @@
             <p>Vous souhaitez solliciter notre intervention pour un event, participer à une répétiton ou encore
                 rejoindre la chorale, contactez- nous, nous vous répondons au plus vite.</p>
             <div class="infos-socials-container">
-              <div class="infos-social-img"><img src="./src/img/Sing&voices-logo.png" alt="Sing and voices - logo"></div>  
+                <div class="infos-social-img"><img src="./src/img/Sing&voices-logo.png" alt="Sing and voices - logo">
+                </div>
                 <div class="infos-social-item">
                     <p><span><i class='bx bxs-envelope'></i></span><a
                             href="mailto:singandvoices@gmail.com">singandvoices@mail.com</a></p>
@@ -109,7 +113,7 @@
             <p>Sing and voices tous droits réservés</p>
         </div>
     </footer>
-    <!-- <script src="/src/min.js"></script> -->
+    <script src="/src/min.js"></script>
 </body>
 
 </html>

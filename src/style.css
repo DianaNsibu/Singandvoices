@@ -1,14 +1,10 @@
-/* Box sizing rules */
+/* Box sizing rules , remove default margin*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-/* Remove default margin */
-* {
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
@@ -41,6 +37,7 @@ h1,h2,h3,h4{
     text-align: center;
 }
 a{
+  text-decoration: none;
   color: #f63502;
 }
 p{
@@ -63,27 +60,50 @@ section {
 
 
 /*-------------------------- header--------------------------------- */
+
 .navbar{
+  /* position: fixed; */
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 2%;
   background-color: #03191e;
+  justify-content: space-between;
+  
 }
-.navbar a{
+.logo{
   color:#efedeb;
 }
+.hamburger{
+  display: none;
+}
+.nav-item{
+  color:#efedeb;
+  margin-right: 0.9rem;
+}
+.nav-item::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  background: #f63502;
+  width: 0%;
+  transition: 0.3s ease-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
 .logo{
   font-size: 1.5rem;
   font-weight: bold;
 }
-.nav-links ul{
+.nav-links{
   display: flex;
-  flex-direction: column;
+  
 }
-
-.nav-links ul li .active-link{
+.active{
   color:#f63502;
   font-weight: bold;
 }
@@ -205,6 +225,7 @@ footer{
 
 
 @media screen and (max-width:768px) {
+  /*-------------Vidéo--------------------*/
   .video{
     width: 100%;
     display: flex;
@@ -214,6 +235,89 @@ footer{
   .video iframe{
     width: 100%;
   }  
+/*---------------menu burger--------------*/
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background: #03191e;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s 0.15s ease-out;
+}
+
+.hamburger span:nth-child(1) {
+    transform: translateY(7px);
+}
+
+.hamburger span:nth-child(3) {
+    transform: translateY(-7px);
+}
+
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(3) {
+    transition: transform 0.3s ease-out;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translate(0) rotate(135deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0s ease-out;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translate(0) rotate(-135deg);
+}
+
+.open {
+    transform: translate(0%);
+}
+
+.navbar{
+  flex-direction: column;
+}
+.nav-burger{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.nav-links{
+  width: 100%;
+  height: 60vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-100%);
+  transition: transform 0.3s ease-out;
+}
+.nav-links a {
+  margin-top: 1.5rem;
+}
+
+.visible {
+    display: flex;
+    transform: translate(0%);
+}
+
+
 }
 
 @media screen and (min-width: 768px){
@@ -251,9 +355,6 @@ footer{
   align-items: center;
   padding: 2%;
   
-}
-.nav-links ul{
-  flex-direction: row;
 }
   .text-box {
     width: 60%;
