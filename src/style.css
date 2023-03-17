@@ -43,10 +43,10 @@ a{
 p{
   margin-top: 0.9rem;
   margin-bottom: 0.9rem;
+  text-align: justify;
 }
 
 main {
-  border: #f63502 1px solid;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ main {
 }
 
 section {
-  width: 70%;
+  width: 60%;
   margin-bottom: 1.8rem;
 }
 
@@ -203,9 +203,10 @@ section {
   width: 100%;
 }
 .infos-social-item{
-  width: 60%;
-  border-right: #03191e 2px solid;
+  /* width: 60%;
+  border-right: #03191e 2px solid; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
